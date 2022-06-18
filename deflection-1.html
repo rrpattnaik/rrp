@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deflection</title>
+    <h2 align="center">Simply Supported beam with a point load</h2>
+    <link rel="stylesheet" href="deflection-1.css">
+</head>
+<img align="center" src="simply-supported.JPG" class="image">
+<body>
+<table align="center" border="black">
+    <tr align="center">
+        <th>Elements</th>
+        <th>Values</th>
+        <th>units</th>
+        <th>Elements</th>
+        <th>Values</th>
+        <th>units</th>
+        <th>Elements</th>
+        <th>Values</th>
+        <th>units</th>
+        <th>Elements</th>
+        <th>Values</th>
+        <th>units</th>
+    </tr>
+    <tr align="center">
+        <td>Load, P</td>
+        <td bgcolor="yellow"><input type="text" id="load"></td>
+        <td>kN</td>
+        <td>Reaction, R<sub>A</sub></td>
+        <td><input type="text" id="recA" readonly></td>
+        <td>kN</td>
+        <td>Elasticity, E</td>
+        <td><input type="text" id="elasticity" value="200"></td>
+        <td>GPa</td>
+        <td>θ<sub>x1</sub></td>
+        <td><input type="text" id="thetax1" readonly></td>
+        <td>rad</td>
+    </tr>
+    <tr align="center">
+        <td>Span, L</td>
+        <td><input type="text" id="span"></td>
+        <td>m</td>
+        <td>Reaction, R<sub>B</sub></td>
+        <td><input type="text" id="recB" readonly></td>
+        <td>kN</td>
+        <td>MI, I</td>
+        <td><input type="text" id="mi" value="0.000005"></td>
+        <td>mm<sup>4</sup></td>
+        <td>θ<sub>x2</sub></td>
+        <td><input type="text" id="thetax2" readonly></td>
+        <td>rad</td>
+    </tr>
+    <tr align="center">
+        <td>Distance, a</td>
+        <td><input type="text" id="dista"></td>
+        <td>m</td>
+        <td>Moment, M<sub>C</sub></td>
+        <td><input type="text" id="momentC" readonly></td>
+        <td>kN.m</td>
+        <td>θ<sub>A</sub></td>
+        <td><input type="text" id="thetaA" readonly></td>
+        <td>rad</td>
+        <td>Δ<sub>x1</sub></td>
+        <td><input type="text" id="deltax1" readonly></td>
+        <td>mm</td>
+    </tr>
+    <tr align="center">
+        <td>Distance, x<sub>1</sub></td>
+        <td><input type="text" id="distx1"></td>
+        <td>m</td>
+        <td>Moment, M<sub>x1</sub></td>
+        <td><input type="text" id="momentx1" readonly></td>
+        <td>kN.m</td>
+        <td>θ<sub>B</sub></td>
+        <td><input type="text" id="thetaB" readonly></td>
+        <td>rad</td>
+        <td>Δ<sub>x2</sub></td>
+        <td><input type="text" id="deltax2" readonly></td>
+        <td>mm</td>
+    </tr>
+    <tr align="center">
+        <td>Distance, x<sub>2</sub></td>
+        <td><input type="text" id="distx2" ></td>
+        <td>m</td>
+        <td>Moment, M<sub>x2</sub></td>
+        <td><input type="text" id="momentx2" readonly></td>
+        <td>kN.m</td>
+        <td>Δ<sub>C</sub></td>
+        <td><input type="text" id="deltaC" readonly></td>
+        <td>mm</td>
+        <td>Δ<sub>Max</sub></td>
+        <td><input type="text" id="deltamax" readonly></td>
+        <td>mm</td>
+    </tr>
+    <tr align="center">
+        
+        <td>Location Δ<sub>Max</sub></td>
+        <td><input type="text" id="distmax" readonly></td>
+        <td>mm</td>
+        
+    </tr>
+    <tr>
+        <td colspan="12" bgcolor="black"></td>
+    </tr>
+    <tr align="center">
+        <td colspan="5"></td>
+        <td> <input class = "button" type = "button" value = "Clear All" onclick = "clearall()" /> </td>  
+        <td> <input class = "button" type = "button" value = "Calculate" onclick = "calculate()" /> </td>
+        <td colspan="5"></td>
+        
+    </tr>
+</table>
+<script type="text/javascript" src="deflection-1.js"> </script>
+</body>
+</html>
