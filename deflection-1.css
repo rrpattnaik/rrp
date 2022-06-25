@@ -1,0 +1,19 @@
+.ss-image1{
+    display: block;
+    margin-top: -7%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: whitesmoke;
+}
+table#ss-table {
+    margin-left: 15%;
+    table-layout: auto;
+    align-self: center;
+}
+input {
+    background-color:whitesmoke;
+}
+.input{
+    background-color: blanchedalmond;
+}
