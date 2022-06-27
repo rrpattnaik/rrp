@@ -46,6 +46,11 @@ body {
     color: green; }
         
 /* Image slide*/
+img#slde {
+    width:500px;
+    height:350px;
+    object-fit:cover;
+}
     table {
         
         margin-left: 0%;
