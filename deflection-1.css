@@ -7,9 +7,10 @@
     background-color: whitesmoke;
 }
 table#ss-table {
-    margin-left: 15%;
+    margin-left: 31%;
     table-layout: auto;
     align-self: center;
+    border-collapse: collapse;
 }
 input {
     background-color:whitesmoke;
