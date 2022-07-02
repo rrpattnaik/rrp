@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dr.R.R.Pattnaik</title>
+  <link rel="stylesheet" href="mypage-r1.css">
+</head>
+<body>
+  <nav id="ntmenu">
+  <div class="menu-bar">
+    <ul>
+      
+      <li><a href="index.html">Home </a> </li>
+      <li><a href="about.html"> About</a></li>
+      <li><a href="research-pub.html"> Research Publications </a></li>
+      <li><a href="#"> Class Assistance </a>
+           <div class="sub-menu">
+             <ul>
+              <li><a href ="som1.html">Strength of Materials</a></li>
+              <li><a href = "tos.html">Theory of Structure</a></li>
+              <li><a href ="sie.html">Similitude in Engineering</a></li>
+             </ul>
+           </div>
+       </li>
+       <li><a href="contact.html">Contact</a></li>
+     </ul>
+    </div>
+    </nav>
+<!--Side memnu-->
+<aside class="side-menu">
+  <ul>
+   <li><a href ="som1.html">SS beam with Point Load</a></li>
+   <li><a href ="ss-udl.html">SS beam with UDL</a></li>
+   <li><a href ="">SS beam with Vary Load</a></li>
+   <li><a href ="">Cantilever with Point Load</a></li>
+   <li><a href ="">Cantilever with UDL</a></li>
+   <li><a href ="">Column & Strut</a></li>
+   <li><a href ="">Masonry Dam</a></li>
+   <li><a href ="">Fixed beam</a></li>
+   <li><a href ="">Prop Cantiliver</a></li>
+   <li><a href ="">Continuous beam</a></li>
+  </ul>
+</aside>   
+
+<!--SOM table-->
+<link rel="stylesheet" href="deflection-1.css">
+<img align="center" src="ss-udl.PNG" class="ss-image1">
+<table id="ss-table"  border="black">
+    <tr align="center">
+        <th>Elements</th>
+        <th>Values</th>
+        <th>units</th>
+        <th>Elements</th>
+        <th>Values</th>
+        <th>units</th>
+    </tr>
+    <tr>
+        <td colspan="6" bgcolor="black"></td>
+    </tr>
+    <tr align="center">
+        <td>Load, w</td>
+        <td ><input class="input" type="text" id="load" size="10"></td>
+        <td>kN/m</td>
+        <td>Span, L</td>
+        <td><input class="input" type="text" id="span" size="10"></td>
+        <td>m</td>
+    </tr>
+    <tr align="center">
+        <td>Distance, a</td>
+        <td><input class="input" type="text" id="dista" size="10"></td>
+        <td>m</td>
+        <td>Distance, b</td>
+        <td><input type="text" id="distb" readonly size="10"></td>
+        <td>m</td>
+    </tr> 
+    <tr align="center">
+        <td>Distance, x<sub>1</sub></td>
+        <td><input class="input" type="text" id="distx1" size="10"></td>
+        <td>m</td>
+        <td>Distance, x<sub>2</sub></td>
+        <td><input class="input" type="text" id="distx2" size="10"></td>
+        <td>m</td>
+    </tr>
+    <tr align="center">
+        <td colspan="4"></td>
+    
+        <td> <input class = "button" type = "button" value = "Clear All" onclick = "clearall()" /> </td>  
+        <td> <input class = "button" type = "button" value = "Calculate" onclick = "calculate()" /> </td>
+       
+    </tr> 
+    <tr align="center">   
+        <td>Reaction, R<sub>A</sub></td>
+        <td><input type="text" id="recA" readonly size="10"></td>
+        <td>kN</td>
+        <td>Reaction, R<sub>B</sub></td>
+        <td><input type="text" id="recB" readonly size="10"></td>
+        <td>kN</td>
+    </tr> 
+    <tr align="center">   
+        <td>Shear, V<sub>x1</sub></td>
+        <td><input type="text" id="shearvx1" readonly size="10"></td>
+        <td>kN</td>
+        <td>Shear, V<sub>c</sub></td>
+        <td><input type="text" id="shearvc" readonly size="10"></td>
+        <td>kN</td>
+    </tr> 
+    <tr align="center">
+        <td>Moment, M<sub>Max</sub></td>
+        <td><input type="text" id="momentmax" readonly size="10"></td>
+        <td>kN.m</td>
+        <td>Location M<sub>Max</sub></td>
+        <td><input type="text" id="distmax" readonly size="10"></td>
+        <td>mm</td>        
+    </tr>
+    <tr align="center">
+        <td>Moment, M<sub>x1</sub></td>
+        <td><input type="text" id="momentx1" readonly size="10"></td>
+        <td>kN.m</td>
+        <td>Moment, M<sub>x2</sub></td>
+        <td><input type="text" id="momentx2" readonly size="10"></td>
+        <td>kN.m</td>
+    </tr>
+    <tr align="center">
+        <td>Elasticity, E</td>
+        <td><input class="input" type="text" id="elasticity" value="200" size="10"></td>
+        <td>GPa</td>
+        <td>MI, I</td>
+        <td><input class="input" type="text" id="mi" value="0.000005" size="10"></td>
+        <td>mm<sup>4</sup></td>
+    </tr>
+    <tr align="center">        
+        <td>Δ<sub>x1</sub></td>
+        <td><input type="text" id="deltax1" readonly size="10"></td>
+        <td>mm</td>
+        <td>Δ<sub>x2</sub></td>
+        <td><input type="text" id="deltax2" readonly size="10"></td>
+        <td>mm</td>
+    </tr>
+    <tr align="center">
+        <td>θ<sub>x1</sub></td>
+        <td><input type="text" id="thetax1" readonly size="10"></td>
+        <td>rad</td>
+        <td>θ<sub>x2</sub></td>
+        <td><input type="text" id="thetax2" readonly size="10"></td>
+        <td>rad</td>  
+    </tr>
+   
+    <tr>
+        <td colspan="6" bgcolor="black"></td>
+    </tr>
+    
+</table>
+<script type="text/javascript" src="ss-udl.js"> </script>
+
+
+</body>
+
+</html>
