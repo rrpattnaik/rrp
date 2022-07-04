@@ -1,0 +1,10 @@
+tr:nth-child(even){background-color: white;}
+th {background-color: #4444;}
+td {padding: 3px; color:black;font-family:Calibri, sans-serif; font-size:11pt;text-align: center;}
+table#steeltable {
+    margin-top: -25%;
+	margin-left: 20%;
+    table-layout: auto;
+    align-self: center;
+    
+}
