@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dr.R.R.Pattnaik</title>
+  <link rel="stylesheet" href="mypage-r1.css">
+  <link rel="stylesheet" href="steel-table.css">
+  <script src="math.js"></script>
+</head>
+<body>
+  <nav id="ntmenu">
+  <div class="menu-bar">
+    <ul>
+      
+      <li><a href="index.html">Home </a> </li>
+      <li><a href="about.html"> About</a></li>
+      <li><a href="research-pub.html"> Research Publications </a></li>
+      <li><a href="#"> Class Assistance </a>
+           <div class="sub-menu">
+             <ul>
+              <li><a href ="som.html">Strength of Materials</a></li>
+              <li><a href = "tos.html">Theory of Structure</a></li>
+              <li><a href ="sie.html">Similitude in Engineering</a></li>
+             </ul>
+           </div>
+       </li>
+       <li><a href="contact.html">Contact</a></li>
+     </ul>
+    </div>
+    </nav>
+<!--Side memnu-->
+<aside class="side-menu">
+  <ul>
+   <li><a href ="">Dimensional Analysis</a></li>
+   
+  
+  </ul>
+</aside>   
+<!--Dimensional Analysis-->
+
+
+<h2 alignt="center">Table for 4 variables</h2>
+<table id="DA" align="center">
+  <tr>
+      <th>Dimensions </th>
+      <th>D</th>
+      <th>C</th>
+      <th>B</th>
+      <th>A</th>
+  </tr>
+  <tr>
+    <td align="center">Symbols</td>
+    <td><input type="text" ></td>
+    <td><input type="text" > </td>
+    <td><input type="text" > </td>
+    <td><input type="text" > </td>
+</tr>
+  <tr>
+      <td align="center">M</td>
+      <td><input type="text" id="MA"></td>
+      <td><input type="text" id="MB"> </td>
+      <td><input type="text" id="MC"> </td>
+      <td><input type="text" id="MD"> </td>
+  </tr>
+  <tr>
+      <td align="center">L</td>
+      <td><input type="text" id="LA"> </td>
+      <td><input type="text" id="LB"> </td>
+      <td><input type="text" id="LC"> </td>
+      <td><input type="text" id="LD"> </td>
+  </tr>
+  <tr>
+      <td align="center">T</td>
+      <td><input type="text" id="TA"> </td>
+      <td><input type="text" id="TB"> </td>
+      <td><input type="text" id="TC"> </td>
+      <td><input type="text" id="TD"> </td>
+  </tr>
+  <tr>
+      <td align="center">π</td>
+      <td><input type="text" id="PiA" value="1" readonly> </td>
+      <td><input type="text" id="PiB"> </td>
+      <td><input type="text" id="PiC"> </td>
+      <td><input type="text" id="PiD"> </td>
+  </tr>
+  <tr>
+  <td><input type="button" onclick = "dimAnalysis4 ()" value="Calculate"></td>
+  </tr>
+ </table>
+
+<h2 alignt="center">Table for 5 variables</h2>
+ <table id="DA" align="center">
+   <tr>
+       <th>Dimensions </th>
+       <th>E</th>
+       <th>D</th>
+       <th>C</th>
+       <th>B</th>
+       <th>A</th>
+   </tr>
+   <tr>
+    <td align="center">Symbols</td>
+    <td><input type="text" ></td>
+    <td><input type="text" ></td>
+    <td><input type="text" > </td>
+    <td><input type="text" > </td>
+    <td><input type="text" > </td>
+</tr>
+   <tr>
+       <td align="center">M</td>
+       <td><input type="text" id="ME5"></td>
+       <td><input type="text" id="MD5"></td>
+       <td><input type="text" id="MC5"> </td>
+       <td><input type="text" id="MB5"> </td>
+       <td><input type="text" id="MA5"> </td>
+   </tr>
+   <tr>
+       <td align="center">L</td>
+       <td><input type="text" id="LE5"> </td>
+       <td><input type="text" id="LD5"> </td>
+       <td><input type="text" id="LC5"> </td>
+       <td><input type="text" id="LB5"> </td>
+       <td><input type="text" id="LA5"> </td>
+   </tr>
+   <tr>
+       <td align="center">T</td>
+       <td><input type="text" id="TE5"> </td>
+       <td><input type="text" id="TD5"> </td>
+       <td><input type="text" id="TC5"> </td>
+       <td><input type="text" id="TB5"> </td>
+       <td><input type="text" id="TA5"> </td>
+   </tr>
+   <tr>
+       <td align="center">π<sub>1</sub></td>
+       <td><input type="text" id="Pi1E5" value="1" readonly> </td>
+       <td><input type="text" id="Pi1D5" value="0" readonly> </td>
+       <td><input type="text" id="Pi1C5"> </td>
+       <td><input type="text" id="Pi1B5"> </td>
+       <td><input type="text" id="Pi1A5"> </td>
+   </tr>
+   <tr>
+    <td align="center">π<sub>2</sub></td>
+    <td><input type="text" id="Pi2E5" value="0" readonly> </td>
+    <td><input type="text" id="Pi2D5" value ="1" readonly> </td>
+    <td><input type="text" id="Pi2C5"> </td>
+    <td><input type="text" id="Pi2B5"> </td>
+    <td><input type="text" id="Pi2A5"> </td>
+</tr>
+   <tr>
+   <td><input type="button" onclick = "dimAnalysis5()" value="Calculate"></td>
+   </tr>
+  </table>
+
+<h2 alignt="center">Table for 6 variables</h2>
+  <table id="DA" align="center">
+    <tr>
+        <th>Dimensions </th>
+        <th>F</th>
+        <th>E</th>
+        <th>D</th>
+        <th>C</th>
+        <th>B</th>
+        <th>A</th>
+    </tr>
+    <tr>
+        <td align="center">Symbols</td>
+        <td><input type="text" ></td>
+        <td><input type="text" ></td>
+        <td><input type="text" ></td>
+        <td><input type="text" > </td>
+        <td><input type="text" > </td>
+        <td><input type="text" > </td>
+    </tr>
+    <tr>
+        <td align="center">M</td>
+        <td><input type="text" id="MF6"></td>
+        <td><input type="text" id="ME6"></td>
+        <td><input type="text" id="MD6"></td>
+        <td><input type="text" id="MC6"> </td>
+        <td><input type="text" id="MB6"> </td>
+        <td><input type="text" id="MA6"> </td>
+    </tr>
+    <tr>
+        <td align="center">L</td>
+        <td><input type="text" id="LF6"> </td>
+        <td><input type="text" id="LE6"> </td>
+        <td><input type="text" id="LD6"> </td>
+        <td><input type="text" id="LC6"> </td>
+        <td><input type="text" id="LB6"> </td>
+        <td><input type="text" id="LA6"> </td>
+    </tr>
+    <tr>
+        <td align="center">T</td>
+        <td><input type="text" id="TF6"> </td>
+        <td><input type="text" id="TE6"> </td>
+        <td><input type="text" id="TD6"> </td>
+        <td><input type="text" id="TC6"> </td>
+        <td><input type="text" id="TB6"> </td>
+        <td><input type="text" id="TA6"> </td>
+    </tr>
+    <tr>
+        <td align="center">π<sub>1</sub></td>
+        <td><input type="text" id="Pi1F6" value="1" readonly> </td>
+        <td><input type="text" id="Pi1E6" value="0" readonly> </td>
+        <td><input type="text" id="Pi1D6" value="0" readonly> </td>
+        <td><input type="text" id="Pi1C6"> </td>
+        <td><input type="text" id="Pi1B6"> </td>
+        <td><input type="text" id="Pi1A6"> </td>
+    </tr>
+    <tr>
+     <td align="center">π<sub>2</sub></td>
+     <td><input type="text" id="Pi2F6" value="0" readonly> </td>
+     <td><input type="text" id="Pi2E6" value="1" readonly> </td>
+     <td><input type="text" id="Pi2D6" value ="0" readonly> </td>
+     <td><input type="text" id="Pi2C6"> </td>
+     <td><input type="text" id="Pi2B6"> </td>
+     <td><input type="text" id="Pi2A6"> </td>
+ </tr>
+ <tr>
+  <td align="center">π<sub>3</sub></td>
+  <td><input type="text" id="Pi3F6" value="0" readonly> </td>
+  <td><input type="text" id="Pi3E6" value="0" readonly> </td>
+  <td><input type="text" id="Pi3D6" value ="1" readonly> </td>
+  <td><input type="text" id="Pi3C6"> </td>
+  <td><input type="text" id="Pi3B6"> </td>
+  <td><input type="text" id="Pi3A6"> </td>
+</tr>
+    <tr>
+    <td><input type="button" onclick = "dimAnalysis6()" value="Calculate"></td>
+    </tr>
+   </table>
+   
+<h2 alignt="center">Table for 7 variables</h2>
+   <table id="DA" align="center">
+     <tr>
+         <th>Dimensions </th>
+         <th>G</th>
+         <th>F</th>
+         <th>E</th>
+         <th>D</th>
+         <th>C</th>
+         <th>B</th>
+         <th>A</th>
+     </tr>
+     <tr>
+        <td align="center">Symbols</td>
+        <td><input type="text" ></td>
+        <td><input type="text" ></td>
+        <td><input type="text" ></td>
+        <td><input type="text" ></td>
+        <td><input type="text" > </td>
+        <td><input type="text" > </td>
+        <td><input type="text" > </td>
+    </tr>
+     <tr>
+         <td align="center">M</td>
+         <td><input type="text" id="MG7"></td>
+         <td><input type="text" id="MF7"></td>
+         <td><input type="text" id="ME7"></td>
+         <td><input type="text" id="MD7"></td>
+         <td><input type="text" id="MC7"> </td>
+         <td><input type="text" id="MB7"> </td>
+         <td><input type="text" id="MA7"> </td>
+     </tr>
+     <tr>
+         <td align="center">L</td>
+         <td><input type="text" id="LG7"> </td>
+         <td><input type="text" id="LF7"> </td>
+         <td><input type="text" id="LE7"> </td>
+         <td><input type="text" id="LD7"> </td>
+         <td><input type="text" id="LC7"> </td>
+         <td><input type="text" id="LB7"> </td>
+         <td><input type="text" id="LA7"> </td>
+     </tr>
+     <tr>
+         <td align="center">T</td>
+         <td><input type="text" id="TG7"> </td>
+         <td><input type="text" id="TF7"> </td>
+         <td><input type="text" id="TE7"> </td>
+         <td><input type="text" id="TD7"> </td>
+         <td><input type="text" id="TC7"> </td>
+         <td><input type="text" id="TB7"> </td>
+         <td><input type="text" id="TA7"> </td>
+     </tr>
+     <tr>
+         <td align="center">π<sub>1</sub></td>
+         <td><input type="text" id="Pi1G7" value="1" readonly> </td>
+         <td><input type="text" id="Pi1F7" value="0" readonly> </td>
+         <td><input type="text" id="Pi1E7" value="0" readonly> </td>
+         <td><input type="text" id="Pi1D7" value="0" readonly> </td>
+         <td><input type="text" id="Pi1C7"> </td>
+         <td><input type="text" id="Pi1B7"> </td>
+         <td><input type="text" id="Pi1A7"> </td>
+     </tr>
+     <tr>
+      <td align="center">π<sub>2</sub></td>
+      <td><input type="text" id="Pi2G7" value="0" readonly> </td>
+      <td><input type="text" id="Pi2F7" value="1" readonly> </td>
+      <td><input type="text" id="Pi2E7" value="0" readonly> </td>
+      <td><input type="text" id="Pi2D7" value ="0" readonly> </td>
+      <td><input type="text" id="Pi2C7"> </td>
+      <td><input type="text" id="Pi2B7"> </td>
+      <td><input type="text" id="Pi2A7"> </td>
+  </tr>
+  <tr>
+   <td align="center">π<sub>3</sub></td>
+   <td><input type="text" id="Pi3G7" value="0" readonly> </td>
+   <td><input type="text" id="Pi3F7" value="0" readonly> </td>
+   <td><input type="text" id="Pi3E7" value="1" readonly> </td>
+   <td><input type="text" id="Pi3D7" value ="0" readonly> </td>
+   <td><input type="text" id="Pi3C7"> </td>
+   <td><input type="text" id="Pi3B7"> </td>
+   <td><input type="text" id="Pi3A7"> </td>
+ </tr>
+ <tr>
+    <td align="center">π<sub>4</sub></td>
+    <td><input type="text" id="Pi4G7" value="0" readonly> </td>
+    <td><input type="text" id="Pi4F7" value="0" readonly> </td>
+    <td><input type="text" id="Pi4E7" value="0" readonly> </td>
+    <td><input type="text" id="Pi4D7" value ="1" readonly> </td>
+    <td><input type="text" id="Pi4C7"> </td>
+    <td><input type="text" id="Pi4B7"> </td>
+    <td><input type="text" id="Pi4A7"> </td>
+  </tr>
+     <tr>
+     <td><input type="button" onclick = "dimAnalysis7()" value="Calculate"></td>
+     </tr>
+    </table>
+ 
+
+</body>
+
+<script src="dimen-anal.js"></script>
+
+</html>

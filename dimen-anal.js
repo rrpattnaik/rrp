@@ -1,0 +1,161 @@
+
+function dimAnalysis4 ()
+{  
+var ar1c1 = eval(document.getElementById("MB").value);
+var ar1c2 = eval(document.getElementById("MC").value);
+var ar1c3 = eval(document.getElementById("MD").value);
+var ar2c1 = eval(document.getElementById("LB").value);
+var ar2c2 = eval(document.getElementById("LC").value);
+var ar2c3 = eval(document.getElementById("LD").value);
+var ar3c1 = eval(document.getElementById("TB").value);
+var ar3c2 = eval(document.getElementById("TC").value);
+var ar3c3 = eval(document.getElementById("TD").value);
+const mA = math.matrix([[ar1c1, ar1c2, ar1c3], [ar2c1, ar2c2, ar2c3], [ar3c1, ar3c2, ar3c3]]);
+const mAI = math.inv(mA);
+var br1c1 = eval(document.getElementById("MA").value);
+var br2c1 = eval(document.getElementById("LA").value);
+var br3c1 = eval(document.getElementById("TA").value);
+var mB = math.matrix([[br1c1], [br2c1], [br3c1]]);
+const matrixmAB = math.multiply(mAI, mB);
+const matrixmABT = math.transpose(math.multiply(-1, matrixmAB));
+var pr1c1 = matrixmABT.subset(math.index(0,0));
+var pr1c2 = matrixmABT.subset(math.index(0,1));
+var pr1c3 = matrixmABT.subset(math.index(0,2));
+document.getElementById("PiB").value = pr1c1;
+document.getElementById("PiC").value = pr1c2;
+document.getElementById("PiD").value = pr1c3;
+}
+function dimAnalysis5()
+{  
+var ar1c15 = eval(document.getElementById("MC5").value);
+var ar1c25 = eval(document.getElementById("MB5").value);
+var ar1c35 = eval(document.getElementById("MA5").value);
+var ar2c15 = eval(document.getElementById("LC5").value);
+var ar2c25 = eval(document.getElementById("LB5").value);
+var ar2c35 = eval(document.getElementById("LA5").value);
+var ar3c15 = eval(document.getElementById("TC5").value);
+var ar3c25 = eval(document.getElementById("TB5").value);
+var ar3c35 = eval(document.getElementById("TA5").value);
+const mA5 = math.matrix([[ar1c15, ar1c25, ar1c35], [ar2c15, ar2c25, ar2c35], [ar3c15, ar3c25, ar3c35]]);
+const mAI5 = math.inv(mA5);
+var br1c15 = eval(document.getElementById("ME5").value);
+var br1c25 = eval(document.getElementById("MD5").value);
+var br2c15 = eval(document.getElementById("LE5").value);
+var br2c25 = eval(document.getElementById("LD5").value);
+var br3c15 = eval(document.getElementById("TE5").value);
+var br3c25 = eval(document.getElementById("TD5").value);
+var mB5 = math.matrix([[br1c15, br1c25], [br2c15, br2c25], [br3c15, br3c25]]);
+const matrixmAB5 = math.multiply(mAI5, mB5);
+const matrixmABT5 = math.transpose(math.multiply(-1, matrixmAB5));
+var pr1c15 = matrixmABT5.subset(math.index(0,0));
+var pr1c25 = matrixmABT5.subset(math.index(0,1));
+var pr1c35 = matrixmABT5.subset(math.index(0,2));
+var pr2c15 = matrixmABT5.subset(math.index(1,0));
+var pr2c25 = matrixmABT5.subset(math.index(1,1));
+var pr2c35 = matrixmABT5.subset(math.index(1,2));
+document.getElementById("Pi1C5").value = pr1c15;
+document.getElementById("Pi1B5").value = pr1c25;
+document.getElementById("Pi1A5").value = pr1c35;
+document.getElementById("Pi2C5").value = pr2c15;
+document.getElementById("Pi2B5").value = pr2c25;
+document.getElementById("Pi2A5").value = pr2c35;
+}
+function dimAnalysis6()
+{  
+var ar1c16 = eval(document.getElementById("MC6").value);
+var ar1c26 = eval(document.getElementById("MB6").value);
+var ar1c36 = eval(document.getElementById("MA6").value);
+var ar2c16 = eval(document.getElementById("LC6").value);
+var ar2c26 = eval(document.getElementById("LB6").value);
+var ar2c36 = eval(document.getElementById("LA6").value);
+var ar3c16 = eval(document.getElementById("TC6").value);
+var ar3c26 = eval(document.getElementById("TB6").value);
+var ar3c36 = eval(document.getElementById("TA6").value);
+const mA6 = math.matrix([[ar1c16, ar1c26, ar1c36], [ar2c16, ar2c26, ar2c36], [ar3c16, ar3c26, ar3c36]]);
+const mAI6 = math.inv(mA6);
+var br1c16 = eval(document.getElementById("MF6").value);
+var br1c26 = eval(document.getElementById("ME6").value);
+var br1c36 = eval(document.getElementById("MD6").value);
+var br2c16 = eval(document.getElementById("LF6").value);
+var br2c26 = eval(document.getElementById("LE6").value);
+var br2c36 = eval(document.getElementById("LD6").value);
+var br3c16 = eval(document.getElementById("TF6").value);
+var br3c26 = eval(document.getElementById("TE6").value);
+var br3c36 = eval(document.getElementById("TD6").value);
+var mB6 = math.matrix([[br1c16, br1c26, br1c36], [br2c16, br2c26, br2c36], [br3c16, br3c26, br3c36]]);
+const matrixmAB6 = math.multiply(mAI6, mB6);
+const matrixmABT6 = math.transpose(math.multiply(-1, matrixmAB6));
+var pr1c16 = matrixmABT6.subset(math.index(0,0));
+var pr1c26 = matrixmABT6.subset(math.index(0,1));
+var pr1c36 = matrixmABT6.subset(math.index(0,2));
+var pr2c16 = matrixmABT6.subset(math.index(1,0));
+var pr2c26 = matrixmABT6.subset(math.index(1,1));
+var pr2c36 = matrixmABT6.subset(math.index(1,2));
+var pr3c16 = matrixmABT6.subset(math.index(2,0));
+var pr3c26 = matrixmABT6.subset(math.index(2,1));
+var pr3c36 = matrixmABT6.subset(math.index(2,2));
+
+document.getElementById("Pi1C6").value = pr1c16;
+document.getElementById("Pi1B6").value = pr1c26;
+document.getElementById("Pi1A6").value = pr1c36;
+document.getElementById("Pi2C6").value = pr2c16;
+document.getElementById("Pi2B6").value = pr2c26;
+document.getElementById("Pi2A6").value = pr2c36;
+document.getElementById("Pi3C6").value = pr3c16;
+document.getElementById("Pi3B6").value = pr3c26;
+document.getElementById("Pi3A6").value = pr3c36;
+}
+function dimAnalysis7()
+{  
+var ar1c17 = eval(document.getElementById("MC7").value);
+var ar1c27 = eval(document.getElementById("MB7").value);
+var ar1c37 = eval(document.getElementById("MA7").value);
+var ar2c17 = eval(document.getElementById("LC7").value);
+var ar2c27 = eval(document.getElementById("LB7").value);
+var ar2c37 = eval(document.getElementById("LA7").value);
+var ar3c17 = eval(document.getElementById("TC7").value);
+var ar3c27 = eval(document.getElementById("TB7").value);
+var ar3c37 = eval(document.getElementById("TA7").value);
+const mA7 = math.matrix([[ar1c17, ar1c27, ar1c37], [ar2c17, ar2c27, ar2c37], [ar3c17, ar3c27, ar3c37]]);
+const mAI7 = math.inv(mA7);
+var br1c17 = eval(document.getElementById("MG7").value);
+var br1c27 = eval(document.getElementById("MF7").value);
+var br1c37 = eval(document.getElementById("ME7").value);
+var br1c47 = eval(document.getElementById("MD7").value);
+var br2c17 = eval(document.getElementById("LG7").value);
+var br2c27 = eval(document.getElementById("LF7").value);
+var br2c37 = eval(document.getElementById("LE7").value);
+var br2c47 = eval(document.getElementById("LD7").value);
+var br3c17 = eval(document.getElementById("TG7").value);
+var br3c27 = eval(document.getElementById("TF7").value);
+var br3c37 = eval(document.getElementById("TE7").value);
+var br3c47 = eval(document.getElementById("TD7").value);
+var mB7 = math.matrix([[br1c17, br1c27, br1c37, br1c47], [br2c17, br2c27, br2c37, br2c47], [br3c17, br3c27, br3c37, br3c47]]);
+const matrixmAB7 = math.multiply(mAI7, mB7);
+const matrixmABT7 = math.transpose(math.multiply(-1, matrixmAB7));
+var pr1c17 = matrixmABT7.subset(math.index(0,0));
+var pr1c27 = matrixmABT7.subset(math.index(0,1));
+var pr1c37 = matrixmABT7.subset(math.index(0,2));
+var pr2c17 = matrixmABT7.subset(math.index(1,0));
+var pr2c27 = matrixmABT7.subset(math.index(1,1));
+var pr2c37 = matrixmABT7.subset(math.index(1,2));
+var pr3c17 = matrixmABT7.subset(math.index(2,0));
+var pr3c27 = matrixmABT7.subset(math.index(2,1));
+var pr3c37 = matrixmABT7.subset(math.index(2,2));
+var pr4c17 = matrixmABT7.subset(math.index(3,0));
+var pr4c27 = matrixmABT7.subset(math.index(3,1));
+var pr4c37 = matrixmABT7.subset(math.index(3,2));
+
+document.getElementById("Pi1C7").value = pr1c17;
+document.getElementById("Pi1B7").value = pr1c27;
+document.getElementById("Pi1A7").value = pr1c37;
+document.getElementById("Pi2C7").value = pr2c17;
+document.getElementById("Pi2B7").value = pr2c27;
+document.getElementById("Pi2A7").value = pr2c37;
+document.getElementById("Pi3C7").value = pr3c17;
+document.getElementById("Pi3B7").value = pr3c27;
+document.getElementById("Pi3A7").value = pr3c37;
+document.getElementById("Pi4C7").value = pr4c17;
+document.getElementById("Pi4B7").value = pr4c27;
+document.getElementById("Pi4A7").value = pr4c37;
+}
