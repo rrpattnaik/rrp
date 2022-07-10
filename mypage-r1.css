@@ -86,11 +86,14 @@ img#slde {
         text-align: left;
         font-weight:bold;
         padding: 10px;
+        margin-left:15%;
       }
       .custom_heading-text2 {
         text-align: justify;
         font-size: 1.1em;
-        margin-right: 10%;
+        line-height:1.6;
+        margin-right: 15%;
+        margin-left: 15%;
         
       }
  /*side menu */     
