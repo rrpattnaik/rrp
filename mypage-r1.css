@@ -124,3 +124,18 @@ img#slde {
         padding: 10px;
         margin-right: 25%;
       }
+/*Engineering Mechanics section */
+      .heading1_em {
+        text-align: center;
+        font-weight:bold;
+        padding: 10px;
+        margin-left: 15%;
+      }
+      .heading-text2_em {
+        text-align: justify;
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin-right: 15%;
+        margin-left: 15%;
+        
+      }
