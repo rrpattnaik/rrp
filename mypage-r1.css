@@ -139,3 +139,19 @@ img#slde {
         margin-left: 15%;
         
       }
+      .heading-text3_em {
+        text-align: justify;
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin-right: 15%;
+        margin-left: 15%;
+        
+      }
+	.heading-text4_em {
+        text-align: right;
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin-right: 15%;
+        margin-left: 15%;
+        
+      }
